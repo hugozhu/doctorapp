@@ -69,7 +69,7 @@ func main() {
 		fmt.Println(msg.Text)
 		canvas.Refresh(grid)
 		//build and run command
-		res := executeCommand("./dryrun", msg.Text)
+		res := executeCommand(command.Command, msg.Text)
 		fmt.Println(res)
 		grid.SetText(res)
 		grid.Wrapping = fyne.TextWrapBreak
